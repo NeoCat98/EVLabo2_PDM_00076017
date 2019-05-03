@@ -32,10 +32,10 @@ class button_fragment: Fragment() {
         val view = inflater.inflate(R.layout.fragment_button, container, false)
 
 
-        button_forward.setOnClickListener {
+        button_forward?.setOnClickListener {
             interfaceFrag?.ForwardButton()
         }
-        button_previous.setOnClickListener {
+        button_previous?.setOnClickListener {
             interfaceFrag?.PreviousButton()
         }
         return view

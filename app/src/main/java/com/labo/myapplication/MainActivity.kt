@@ -12,18 +12,18 @@ class MainActivity : AppCompatActivity(), button_fragment.OnFragmentInteractionL
 
     override fun ForwardButton() {
         when(imagenActual){
-            "imagen1.png"->imagenActual = "imagen2.png"
-            "imagen2.png"->imagenActual = "imagen3.png"
-            "imagen3.png"->imagenActual = "imagen1.png"
+            "https://vignette.wikia.nocookie.net/es.pokemon/images/9/9d/Pichu.png"->imagenActual = "https://vignette.wikia.nocookie.net/es.pokemon/images/7/77/Pikachu.png"
+            "https://vignette.wikia.nocookie.net/es.pokemon/images/7/77/Pikachu.png"->imagenActual = "https://www.ecured.cu/Raichu#/media/File:Raichu1.png"
+            "https://www.ecured.cu/Raichu#/media/File:Raichu1.png"->imagenActual = "https://vignette.wikia.nocookie.net/es.pokemon/images/9/9d/Pichu.png"
         }
         initMainFragment(imagenActual)
     }
 
     override fun PreviousButton() {
         when(imagenActual){
-            "imagen1.png"->imagenActual = "imagen3.png"
-            "imagen2.png"->imagenActual = "imagen1.png"
-            "imagen3.png"->imagenActual = "imagen2.png"
+            "https://vignette.wikia.nocookie.net/es.pokemon/images/9/9d/Pichu.png"->imagenActual = "https://www.ecured.cu/Raichu#/media/File:Raichu1.png"
+            "https://vignette.wikia.nocookie.net/es.pokemon/images/7/77/Pikachu.png"->imagenActual = "https://vignette.wikia.nocookie.net/es.pokemon/images/9/9d/Pichu.png"
+            "https://www.ecured.cu/Raichu#/media/File:Raichu1.png"->imagenActual = "https://vignette.wikia.nocookie.net/es.pokemon/images/7/77/Pikachu.png"
         }
         initMainFragment(imagenActual)
     }
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity(), button_fragment.OnFragmentInteractionL
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        imagenActual = "imagen1.png"
+        imagenActual = "https://vignette.wikia.nocookie.net/es.pokemon/images/9/9d/Pichu.png"
         initMainFragment(imagenActual)
         initFragment()
     }

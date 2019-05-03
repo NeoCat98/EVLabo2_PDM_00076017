@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_images_fragment.view.*
 // TODO: Rename parameter arguments, choose names that match
 class images_fragment : Fragment() {
 
-    private var nombreImg:String = "imagen1.png"
+    private var nombreImg:String = "https://vignette.wikia.nocookie.net/es.pokemon/images/9/9d/Pichu.png/revision/latest?cb=20150620210539"
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
